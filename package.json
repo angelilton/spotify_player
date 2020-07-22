@@ -1,0 +1,59 @@
+{
+  "name": "spotify_player",
+  "version": "1.0.0",
+  "description": "A player using the spotify-wrapper lib",
+  "main": "index.js",
+  "scripts": {
+    "test": "./node_modules/.bin/mocha tests/**/*.spec.js --require babel-register",
+    "test:tdd": "./node_modules/.bin/mocha tests/**/*.spec.js --require babel-register --watch",
+    "test:cover": "nyc yarn test",
+    "start": "./node_modules/.bin/webpack-dev-server --open"
+  },
+  "nyc": {
+    "reporter": [
+      "text",
+      "html"
+    ],
+    "exclude": [
+      "tests/**"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/angelilton/spotify_player.git"
+  },
+  "keywords": [
+    "js",
+    "tdd",
+    "library"
+  ],
+  "author": "Angelilton Epifanio",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/angelilton/spotify_player/issues"
+  },
+  "homepage": "https://github.com/angelilton/spotify_player#readme",
+  "devDependencies": {
+    "babel-loader": "7.0.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-register": "^6.26.0",
+    "chai": "^4.2.0",
+    "eslint": "^7.1.0",
+    "eslint-config-prettier": "6.11.0",
+    "eslint-config-prettier-standard": "3.0.1",
+    "eslint-config-standard": "^14.1.1",
+    "eslint-plugin-import": "^2.20.2",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "3.1.3",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-react": "^7.20.0",
+    "eslint-plugin-standard": "^4.0.1",
+    "husky": "^4.2.5",
+    "mocha": "^8.0.1",
+    "nyc": "^15.1.0",
+    "prettier": "2.0.5",
+    "prettier-config-standard": "1.0.1",
+    "webpack": "2.6.1",
+    "webpack-dev-server": "2.4.5"
+  }
+}
