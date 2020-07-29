@@ -53,6 +53,7 @@
     "nyc": "^15.1.0",
     "prettier": "2.0.5",
     "prettier-config-standard": "1.0.1",
+    "spotify-wrapper": "^2.1.0",
     "webpack": "2.6.1",
     "webpack-dev-server": "2.4.5"
   }
