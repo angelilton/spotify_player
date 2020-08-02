@@ -195,6 +195,7 @@ body {
 
 .music:hover {
   background: #000;
+  opacity: 0.3;
 }
 
 .music-number,
