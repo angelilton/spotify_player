@@ -1,12 +1,9 @@
 import spotify from "./Spotify";
-import renderAlbums from "./albumList";
 import renderAlbumInfo from "./albumInfo";
 import renderAlbumTracks from "./albumTracks";
+import searchEnterTrigger from "./searchTrigger";
 
-const albums = spotify.search.albums("vintage");
-const albumList = document.getElementById("album-list");
-
-albums.then((data) => renderAlbums(data.albums.items, albumList));
+searchEnterTrigger();
 
 const album = spotify.album.getAlbum("4YWK8VDqqpOKc2lTifRMAD");
 const albumInfo = document.getElementById("album-info");
